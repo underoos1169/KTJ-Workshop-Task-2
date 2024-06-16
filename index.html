@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="Title"><img src="tic-tac-toe-game-svgrepo-com.svg" width="30" height="30" style="padding: 1px 2px 1px 1px; margin-right: 2px;">Tic-Tac-Toe</div>
+    <div class="Subtitle">Or, as the Brits call it, "Crosses and Noughts"</div>
+    <div id="Field">
+      <div id="PlayerNames">Please enter custom names if you want to: 
+        <br>
+        <label for="player1Name">Player 1 Name: </label>
+        <input type="text" id="player1Name" placeholder="Player 1">
+        <label for="player2Name">Player 2 Name: </label>
+        <input type="text" id="player2Name" placeholder="Player 2">
+      </div>
+      <div id="StatusText"></div>
+      <div id="Grid">
+        <div cellIndex="0" class="cell"></div>
+        <div cellIndex="1" class="cell"></div>
+        <div cellIndex="2" class="cell"></div>
+        <div cellIndex="3" class="cell"></div>
+        <div cellIndex="4" class="cell"></div>
+        <div cellIndex="5" class="cell"></div>
+        <div cellIndex="6" class="cell"></div>
+        <div cellIndex="7" class="cell"></div>
+        <div cellIndex="8" class="cell"></div>
+      </div>
+      <h3 id="OtherText"></h3>
+      <button id="Restart">New Game</button>
+    </div>
+
+
+    <div id="Leaderboard">
+      <h2>Leaderboard</h2>
+      <table id="Scoreboard">
+        <thead>
+          <tr>
+            <th>Game Number</th>
+            <th>Winner</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+      <button id="ResetLeaderboard">Reset Leaderboard</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
